@@ -4,15 +4,15 @@ public class App {
 
         // Adding vehicles to the fleet
         agency.addVehicle(new Car("C001", "Toyota Corolla", 50, true));
-        agency.addVehicle(new Motorcycle("M001", "Harley Davidson", 30));
-        agency.addVehicle(new Truck("T001", "Ford F-150", 80, 5));
+        agency.addVehicle(new Motorcycle("M001", "Daniel", 30));
+        agency.addVehicle(new Truck("T001", "Ford", 80, 5));
 
         // Display available vehicles
         System.out.println("Available Fleet:");
         agency.displayFleet();
 
         // Renting a car
-        Customer customer = new Customer("John Doe", "john@example.com");
+        Customer customer = new Customer("John", "john@gmail.com");
         Vehicle vehicle = agency.findAvailableVehicle("Car");
         if (vehicle != null) {
             vehicle.setAvailable(false);
